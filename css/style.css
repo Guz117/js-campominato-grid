@@ -1,3 +1,7 @@
+:root {
+    --square-size: 10;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -51,11 +55,11 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(100% / 10); 
-    height: calc(100% / 10);
+    width: calc(100% / var(--square-size)); 
+    height: calc(100% / var(--square-size));
     cursor: pointer;
     border: 2px solid black;
-  }
+}
 
 
 /* footer */
