@@ -8,6 +8,7 @@
     display: flex;
 }
 
+/* header */
 .header {
     justify-content: space-between;
     align-items: center;
@@ -30,13 +31,34 @@ button {
 #select {
     width: 10em;
 }
+/* /header */
 
 .game {
     background-color: #7fffd4;
     width: 100%;
     height: calc(100vh - 130px);
+    
 }
 
+.container {
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    margin: 3em auto;
+}
+
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 10); 
+    height: calc(100% / 10);
+    cursor: pointer;
+    border: 2px solid black;
+  }
+
+
+/* footer */
 footer {
     height: 50px;
     align-items: center;
@@ -45,3 +67,4 @@ footer {
 .made {
     padding-left: 3em;
 }
+/* footer */
