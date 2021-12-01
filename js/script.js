@@ -10,14 +10,16 @@ const colCrazy = 7;
 const container = document.querySelector('.container')
 
 
-const easySelection = document.getElementById('select').value = 'easy';
-const normalSelection = document.getElementById('select').value = 'normal';
-const crazySelection = document.getElementById('select').value = 'crazy';
+// const easySelection = document.getElementById('select').value = 'easy';
+// const normalSelection = document.getElementById('select').value = 'normal';
+// const crazySelection = document.getElementById('select').value = 'crazy';
 const button = document.getElementById('play');
 
 button.addEventListener('click',
   function () {
-    if (easySelection) {
+     let selection = document.getElementById('select').value;
+    console.log(selection)
+     if (selection = 'Easy') {
         for (let i = 1; i < 101; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
@@ -26,7 +28,7 @@ button.addEventListener('click',
             square.append(i);
             container.append(square);
         }
-    } else if (normalSelection){
+    } else if (selection = 'Normal'){
         for (let i = 1; i < 65; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
@@ -35,7 +37,7 @@ button.addEventListener('click',
             square.append(i);
             container.append(square);
         }
-    } else if (crazySelection) {
+    } else if (selection = 'Crazy') {
         for (let i = 1; i < 50; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
