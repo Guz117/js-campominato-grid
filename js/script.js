@@ -19,7 +19,7 @@ button.addEventListener('click',
   function () {
      let selection = document.getElementById('select').value;
     console.log(selection)
-     if (selection = 'Easy') {
+     if (selection == 'Easy') {
         for (let i = 1; i < 101; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
@@ -28,7 +28,7 @@ button.addEventListener('click',
             square.append(i);
             container.append(square);
         }
-    } else if (selection = 'Normal'){
+    } else if (selection == 'Normal'){
         for (let i = 1; i < 65; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
@@ -37,7 +37,7 @@ button.addEventListener('click',
             square.append(i);
             container.append(square);
         }
-    } else if (selection = 'Crazy') {
+    } else if (selection == 'Crazy') {
         for (let i = 1; i < 50; i++) {
             const square = document.createElement('div');
             square.classList.add('square');
